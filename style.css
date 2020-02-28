@@ -1,0 +1,457 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+/* * {
+    border: 2px solid salmon;
+} */
+html {
+    font-size: 62.5%;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.wrapper.one {
+    position: relative;
+}
+
+
+.outWrapper {
+    /* This is the larger outside wrapper */
+    max-width: 1800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* White : #FCFCFC
+Light green : #C3D3CB
+Black : #000000
+Dark green : #152D20
+ */
+
+ /* 
+Heading Text (Animal Refuge) FrederickatheGreat, Regular, 120px Right, Line height: 117px
+Heading Text (suzie's story) FrederickatheGreat, Regular, 51px 
+Heading Text (some of our ...) FrederickatheGreat, Regular, 49px Center
+Heading CormorantGaramond, Semibold, 35px
+Heading Text (Facinating facts...) FrederickatheGreat, Regular, 35px
+Text Style CormorantGaramond, Semibold, 22px Line height: 29px
+Button text CormorantGaramond, Semibold, 18px Center, Line height: 29px
+ */
+
+/* Text Styling */
+h1, h2 {
+    color: white;
+}
+
+h1 {
+    font-family: 'Fredericka the Great', sans-serif;
+    font-weight: 100;
+    font-size: 12rem;
+    text-align: right;
+    line-height: 11.7rem;
+    text-transform: uppercase;
+    width: 60%;
+    position: absolute;
+    right: 10%;
+}
+
+
+h2 {
+    font-family: 'Fredericka the Great', sans-serif;
+    font-size: 5.1rem;
+    font-weight: 100;
+    color: white;
+    text-transform: uppercase;
+    /* line-height: 11.7rem; */
+    margin: 0;
+}
+
+h3 {
+    font-family: 'Fredericka the Great', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+
+p {
+    font-family: 'Cormorant Garamond', sans-serif;
+    color: white;
+    font-size: 2.2rem;
+    line-height: 2.9rem;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    cursor: pointer;
+}
+/* Image Stylings */
+.img {
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.button {
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
+    color: #152D20;
+    background-color: white;  
+    padding: 1rem 2.5rem;
+    font-size: 1.8rem;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+.hero {
+    height: 100vh;
+    background-image: url(./images/image-1.jpg);
+    background-position: 25%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 span {
+    display: block;
+}
+
+.nav {
+    padding-top: 2rem;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-right: 2rem;
+}
+
+.nav i {
+    display: none;
+    color: white;
+    font-size: 5rem;
+    float: right;
+}
+
+.nav i:hover {
+    cursor: pointer;
+}
+.social {
+    color: white;
+    font-size: 2.5rem;
+    position: absolute;
+    right: 2%;
+    bottom: 10%;
+}
+
+.social i {
+    display: block;
+    margin-bottom: 1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.social i:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+
+/* Story Styles */
+
+.story {
+    background-color: #152D20;
+    padding: 11rem 0;
+}
+.story .img {
+    width: 23%  ;
+    object-position: cover;
+    float: left;
+    margin-right: 3rem;
+}
+
+.storyText {
+    width: 100%;
+}
+
+.storyText p {
+    margin-bottom: 0;
+    padding-bottom: 3rem;
+    margin-top: 0;
+    padding-top: 1rem;
+}
+/* Friends Styles */
+.friends {
+    background-color: #C3D3CB;
+    padding: 6rem;
+}
+
+.friends h2 {
+    color: #152D20;
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+.friends h2 span {
+    display: block;
+}
+
+.friends .img {
+    width: 30%;
+    float: left;
+}
+
+.friends .img:nth-of-type(2) {
+    margin: 0 3rem;
+}
+
+/* Guidebar */
+.guideBar {
+    background-color: #152D20;
+    text-transform: uppercase;
+    color: white;
+    padding: 7rem;
+}
+
+.card {
+    width: calc(100% / 3);
+    float: left;
+    text-align: center;
+}
+
+.card p {
+    font-size: 4rem;
+    line-height: 1;
+}
+
+.card p span {
+    display: block;
+}
+.card i {
+    font-size: 7rem;
+    margin-bottom: 2rem;
+}
+
+
+/* Splitter Styles */
+.half {
+    width: 50%;
+    background-color: white;
+}
+
+.half {
+    width: 50%;
+    float: left;
+}
+
+.half h3 {
+    color: #152D20;
+    margin-bottom: 1rem;
+}
+
+.half p {
+    color: black;
+    margin-bottom: 5rem;
+}
+
+.half .button {
+    background-color: #152D20;
+    color: white;
+}
+
+.wrapper .half:nth-of-type(1) {
+    padding: 10rem 10rem 10rem 0;
+}
+
+/* Override wrapper style for the second occurence */
+.lower .wrapper .half {
+    padding: 10rem 0 10rem 10rem;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #152D20;
+    color: white;
+    clear: both;
+    padding: 7rem 0px;
+}
+
+.footerNav {
+    width: 25%;
+    float: left;
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.footerNav li {
+    margin-bottom: 1rem;
+}
+
+.signup {
+    text-align: center;
+    float: left;
+    width: 50%;
+}
+
+input[type=email] {
+    width: 75%;
+    padding: 1.5rem 2rem;
+    font-size: 2rem;
+    float: left;
+}
+
+.input {
+    margin-top: 2rem;
+}
+
+.input a {
+    width: 25%;
+    float: left;
+    color: white;
+    background-color: black;
+    padding: 2rem 1rem;
+    font-size: 1.5rem;
+}
+
+.contact {
+    float: left;
+    width: 25%;
+    text-align: right;
+}
+
+.copyright {
+    background-color: black;
+    color: white;
+    text-align: center;
+    clear: both;
+}
+/* Media Queries */
+@media (max-width: 1265px) {
+    .story .img {
+        width: 36%;
+    }
+}
+
+@media (max-width: 1100px) {
+    h1 {
+        right: 0%;
+    }
+
+    .nav {
+        text-align: center;
+    }
+
+    .nav a {
+        width: 12%;
+        display: inline-block;
+    }
+
+    .story .img {
+        width: 50%;
+    }
+
+    p {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 4.5rem;
+    }
+}
+
+@media (max-width: 955px) {
+    .nav a {
+        font-size: 0em;
+    }
+
+    h1 {
+        left: 0;
+        top: 0;
+        font-size: 3rem;
+        line-height: 4rem;
+        text-align: left;
+        width: 30%;
+    }
+
+    .wrapper {
+        width: 90%;
+    }
+
+    .nav i {
+        display: block;
+    }
+
+    .social {font-size: 3.5rem;}
+}
+
+@media (max-width:875px) {
+    /* Story */
+    .story {
+        padding: 8% 0%;
+    }
+    
+    .story .img {
+        width: 100%;
+        padding: 2rem 30%;
+    }
+
+    .storyText {
+        text-align: center;
+    }
+
+    /* Friends */
+    
+}
+
+@media (max-width: 650px) {
+    /* Story */
+    .story .img {
+        padding: 2rem 20%;
+    }
+}
+
+@media (max-width: 500px) {
+    /* Story */
+    .story .img {
+        padding: 0% 2% 10%;
+    }
+
+    h2,
+    .storyText p {
+        text-align: left;
+    }
+
+    h2 {
+        font-size: 3.8rem;
+    }
+
+    .readMore {
+        display: inline-block;
+        margin: 6% 3%;
+    }
+
+
+}
