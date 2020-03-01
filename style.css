@@ -39,7 +39,7 @@ Black : #000000
 Dark green : #152D20
  */
 
- /* 
+    /* 
 Heading Text (Animal Refuge) FrederickatheGreat, Regular, 120px Right, Line height: 117px
 Heading Text (suzie's story) FrederickatheGreat, Regular, 51px 
 Heading Text (some of our ...) FrederickatheGreat, Regular, 49px Center
@@ -86,7 +86,7 @@ h3 {
 
 
 p {
-    font-family: 'Cormorant Garamond', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: white;
     font-size: 2.2rem;
     line-height: 2.9rem;
@@ -112,7 +112,7 @@ img {
 }
 
 .button {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: serif;
     text-transform: uppercase;
     color: #152D20;
     background-color: white;  
@@ -243,6 +243,7 @@ h1 span {
 .card p {
     font-size: 4rem;
     line-height: 1;
+    font-family: serif;
 }
 
 .card p span {
@@ -255,6 +256,14 @@ h1 span {
 
 
 /* Splitter Styles */
+.mobile {
+    display: none;
+}
+
+.mobile .half {
+    width: 100%;
+}
+
 .half {
     width: 50%;
     background-color: white;
@@ -263,11 +272,13 @@ h1 span {
 .half {
     width: 50%;
     float: left;
+    height: 58rem;
 }
 
 .half h3 {
     color: #152D20;
     margin-bottom: 1rem;
+    margin-top: 0rem;
 }
 
 .half p {
@@ -281,12 +292,18 @@ h1 span {
 }
 
 .wrapper .half:nth-of-type(1) {
-    padding: 10rem 10rem 10rem 0;
+    padding: 9% 9% 9% 0;
+}
+
+.splitter img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 /* Override wrapper style for the second occurence */
 .lower .wrapper .half {
-    padding: 10rem 0 10rem 10rem;
+    padding: 9% 0 9% 9%;
 }
 
 /* Footer Styles */
@@ -297,6 +314,10 @@ footer {
     padding: 7rem 0px;
 }
 
+footer p {
+    font-family: serif;
+}
+
 .footerNav {
     width: 25%;
     float: left;
@@ -304,6 +325,7 @@ footer {
     text-transform: uppercase;
     font-size: 2rem;
     margin: 0;
+    padding-left: 0;
 }
 
 .footerNav li {
@@ -314,6 +336,15 @@ footer {
     text-align: center;
     float: left;
     width: 50%;
+}
+
+.signup p:not(.serif) {
+    font-family: sans-serif;
+}
+
+.submit {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
 }
 
 input[type=email] {
@@ -342,7 +373,12 @@ input[type=email] {
     text-align: right;
 }
 
-.copyright {
+.contact :not(.serif) {
+    font-family: sans-serif;
+}
+
+.copyright p {
+    font-family: serif;
     background-color: black;
     color: white;
     text-align: center;
@@ -353,9 +389,25 @@ input[type=email] {
 /* Media Queries */
 /*  */
 @media (max-width: 1265px) {
+    /* Story */
     .story .img {
         width: 36%;
     }
+
+    /* Footer */
+    footer p {
+        font-size: 1.8rem;
+    }
+
+    .contact {
+        width: 30%;
+    }
+
+    .footerNav {
+        width: 20%;
+    }
+
+
 }
 
 @media (max-width: 1100px) {
@@ -410,19 +462,34 @@ input[type=email] {
     .social {font-size: 3.5rem;}
 
     /* Guidebar */
-    .card i {
-        font-size: 4rem;
-    }
+    .card i {font-size: 4rem;}
 
-    .card p {
-        font-size: 3rem
-    }
+    .card p {font-size: 3rem}
 
-    .guideBar {
-        padding: 5%;
-    }
+    .guideBar {padding: 5%;}
 }
 
+@media (max-width: 900px) {
+    .footerNav {
+        width: 100%;
+    }
+    .footerNav li {
+        display: inline-block;
+        text-align: center;
+        width: 24%;
+    }
+
+    .signup {
+        width: 100%;
+        margin: 9% 0%;
+    }
+
+    .contact {
+        width: 100%;
+        text-align: center;
+    }
+
+}
 @media (max-width:875px) {
     /* Story */
     .story {
@@ -456,6 +523,30 @@ input[type=email] {
 }
 }
 
+@media (max-width: 786px) {
+        /* Splitter */
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .half {
+        width: 100%;
+        text-align: center;
+        height: auto;
+    }
+
+    .half h3 {
+        font-size: 3rem;
+    }
+
+    .wrapper .half:nth-of-type(1) {
+    padding: 10% 0%;
+}
+
 @media (max-width: 750px) {
     /* Guidebar */
     .card {
@@ -470,6 +561,11 @@ input[type=email] {
         padding: 11%;
     }
 
+}
+
+@media (max-width: 700px) {
+
+}
 }
 @media (max-width: 650px) {
     /* Story */
@@ -506,6 +602,21 @@ input[type=email] {
 
     .card p {
         font-size: 2.5rem;
+    }
+
+    /* Footer */
+    .footerNav {
+        font-size: 1.8rem;
+    }
+
+    .input a {
+        width: 100%;
+    }
+
+    input[type="email"] {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 4%;
     }
 }
 
