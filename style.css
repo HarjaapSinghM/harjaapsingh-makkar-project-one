@@ -33,22 +33,6 @@ html {
     margin: 0 auto;
 }
 
-/* White : #FCFCFC
-Light green : #C3D3CB
-Black : #000000
-Dark green : #152D20
- */
-
-    /* 
-Heading Text (Animal Refuge) FrederickatheGreat, Regular, 120px Right, Line height: 117px
-Heading Text (suzie's story) FrederickatheGreat, Regular, 51px 
-Heading Text (some of our ...) FrederickatheGreat, Regular, 49px Center
-Heading CormorantGaramond, Semibold, 35px
-Heading Text (Facinating facts...) FrederickatheGreat, Regular, 35px
-Text Style CormorantGaramond, Semibold, 22px Line height: 29px
-Button text CormorantGaramond, Semibold, 18px Center, Line height: 29px
- */
-
 /* Text Styling */
 h1, h2 {
     color: white;
@@ -66,14 +50,12 @@ h1 {
     right: 10%;
 }
 
-
 h2 {
     font-family: 'Fredericka the Great', sans-serif;
     font-size: 5.1rem;
     font-weight: 100;
     color: white;
     text-transform: uppercase;
-    /* line-height: 11.7rem; */
     margin: 0;
 }
 
@@ -101,7 +83,9 @@ a {
 a:hover {
     cursor: pointer;
 }
-/* Image Stylings */
+
+
+/* Image and Visual Stylings */
 .img {
     display: block;
 }
@@ -123,6 +107,7 @@ img {
 .button:hover {
     cursor: pointer;
 }
+
 .hero {
     height: 100vh;
     background-image: url(./images/image-1.jpg);
@@ -157,6 +142,7 @@ h1 span {
 .nav i:hover {
     cursor: pointer;
 }
+
 .social {
     color: white;
     font-size: 2.5rem;
@@ -170,6 +156,7 @@ h1 span {
     margin-bottom: 1rem;
     text-align: center;
     transition: all 0.3s ease;
+    margin-bottom: 2rem;
 }
 
 .social i:hover {
@@ -177,13 +164,12 @@ h1 span {
     transform: scale(1.2);
 }
 
-
 /* Story Styles */
-
 .story {
     background-color: #152D20;
     padding: 11rem 0;
 }
+
 .story .img {
     width: 23%  ;
     object-position: cover;
@@ -201,6 +187,7 @@ h1 span {
     margin-top: 0;
     padding-top: 1rem;
 }
+
 /* Friends Styles */
 .friends {
     background-color: #C3D3CB;
@@ -249,11 +236,11 @@ h1 span {
 .card p span {
     display: block;
 }
+
 .card i {
     font-size: 7rem;
     margin-bottom: 2rem;
 }
-
 
 /* Splitter Styles */
 .mobile {
@@ -301,7 +288,7 @@ h1 span {
     object-fit: cover;
 }
 
-/* Override wrapper style for the second occurence */
+/* Purpose: Override wrapper style for the second occurence */
 .lower .wrapper .half {
     padding: 9% 0 9% 9%;
 }
@@ -385,9 +372,7 @@ input[type=email] {
     clear: both;
 }
 
-/*  */
 /* Media Queries */
-/*  */
 @media (max-width: 1265px) {
     /* Story */
     .story .img {
@@ -406,26 +391,12 @@ input[type=email] {
     .footerNav {
         width: 20%;
     }
-
-
 }
 
 @media (max-width: 1100px) {
+    /* Font */
     h1 {
         right: 0%;
-    }
-
-    .nav {
-        text-align: center;
-    }
-
-    .nav a {
-        width: 12%;
-        display: inline-block;
-    }
-
-    .story .img {
-        width: 50%;
     }
 
     p {
@@ -435,13 +406,25 @@ input[type=email] {
     h2 {
         font-size: 4.5rem;
     }
+
+    /* Overall header */
+    .nav {
+        text-align: center;
+    }
+
+    .nav a {
+        width: 12%;
+        display: inline-block;
+    }
+
+    /* Story */
+    .story .img {
+        width: 50%;
+    }    
 }
 
 @media (max-width: 955px) {
-    .nav a {
-        font-size: 0em;
-    }
-
+    /* Overall and Typography */
     h1 {
         left: 0;
         top: 0;
@@ -455,6 +438,11 @@ input[type=email] {
         width: 90%;
     }
 
+    /* Header */
+    .nav a {
+        font-size: 0em;
+    }
+    
     .nav i {
         display: block;
     }
@@ -470,12 +458,29 @@ input[type=email] {
 }
 
 @media (max-width: 900px) {
+    /* Footer */
     .footerNav {
         width: 100%;
     }
+
     .footerNav li {
         display: inline-block;
         text-align: center;
+    }
+
+    .footerNav li:nth-child(1) {
+        width: 17%;
+    }
+
+    .footerNav li:nth-child(2) {
+        width: 25%;
+    }
+
+    .footerNav li:nth-child(3) {
+        width: 30%;
+    }
+
+    .footerNav li:nth-child(4) {
         width: 24%;
     }
 
@@ -489,8 +494,16 @@ input[type=email] {
         text-align: center;
     }
 
+    .serif {
+        font-size: 2.5rem;
+    }
+
+    footer p {
+        font-size: 1.4rem; 
+    }
 }
-@media (max-width:875px) {
+
+@media (max-width: 875px) {
     /* Story */
     .story {
         padding: 8% 0%;
@@ -520,11 +533,11 @@ input[type=email] {
 
     .friends .img:nth-of-type(2) {
     margin: 0 0 0 2%;
-}
+    }
 }
 
 @media (max-width: 786px) {
-        /* Splitter */
+    /* Splitter */
     .desktop {
         display: none;
     }
@@ -545,6 +558,7 @@ input[type=email] {
 
     .wrapper .half:nth-of-type(1) {
     padding: 10% 0%;
+    }
 }
 
 @media (max-width: 750px) {
@@ -560,19 +574,13 @@ input[type=email] {
     .guideBar {
         padding: 11%;
     }
-
 }
 
-@media (max-width: 700px) {
-
-}
-}
 @media (max-width: 650px) {
     /* Story */
     .story .img {
         padding: 2rem 20%;
     }
-
 }
 
 @media (max-width: 500px) {
@@ -620,3 +628,8 @@ input[type=email] {
     }
 }
 
+@media (max-width: 400px) {
+    .footerNav {
+        font-size: 1.5rem;
+    }
+}
